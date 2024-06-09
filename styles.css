@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100vw ;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 84, 212, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    display: grid;
+    place-items: center;
+}
+.game-info{
+    color: white;
+    font-size: 20px ;
+    background-color: rgb(156, 156, 156);
+    border-radius: 1rem;
+    border: 1px solid rgb(218, 215, 215) ;
+    padding: 0.5rem 3rem;
+}
+
+.tik-tak-toe{
+    width: 20rem;
+    background-color: rgb(156, 156, 156);
+    border-radius: 1rem;
+    border: 1px solid rgb(218, 215, 215);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+}
+.box{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.box1, .box2, .box4, .box5{
+    border-right: 2px solid  white;
+    border-bottom: 2px solid white;
+}
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+.box7 , .box8{
+    border-right: 2px solid  white;
+}
+.btn{
+    border-radius: 16px;
+    background-color: rgb(156, 156, 156);
+    cursor: pointer;
+    color: white;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: 1px solid rgb(218, 215, 215);
+    display: none;
+}
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: rgb(82, 170, 82);
+}
